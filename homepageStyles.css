@@ -1,0 +1,123 @@
+*{
+    font-family: 'Circular Std';
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+}
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 50px;
+}
+
+.logo{
+    color: #0f0f0f;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #161616;
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    background-color: rgb(220, 220, 220);
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #303030;
+    font-size: 30px;
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #dedede;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+}
+
+.body{
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+
+.box-set{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+@media (max-width:600px) {
+    .box-set{
+        justify-content: center;
+    }
+}
+
+.box{
+    width: 300px;
+    height: 350px;
+}
+
+#box1{
+    background-color: red;
+}
+
+#box2{
+    background-color: rgb(0, 30, 255);
+}
+
+#box3{
+    background-color: rgb(255, 0, 204);
+}
+
+#box4{
+    background-color: rgba(0, 255, 34, 0.387);
+}
+
+#box5{
+    background-color: rgb(0, 255, 221);
+}
